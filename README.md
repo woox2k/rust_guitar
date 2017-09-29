@@ -25,7 +25,7 @@
 - Bind **file_midi.sh**, **aplaymidi.sh**, **kill_aplaymidi.sh** and **kill_midi.sh** to keyboard shortcut
 - Set `input_sensitivity` to 1.00 in `~/.local/share/Steam/steamapps/common/Rust/cfg/client.cfg` I'll try to make the script scale with different input sensitivities in the future but it might result in a rounding errors and bit off-key notes...
 - Run Rust and equip guitar
-- Look directly up in the game. All notes are played relative to top position or eachother so starting to play from any other position results in off-key notes.
+- Look directly up in the game. All notes are played relative to top position. Starting to play from any other position results in off-key notes.
 - Start **file-midi.sh**
 - Start **aplaymidi.sh** At this point the guitar should start playing.
  - run **kill-aplaymidi.sh** to skip a file
