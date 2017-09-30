@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if pidof -x "file-midi.sh" >/dev/null; then
-    echo "Script already running"
-	exit 1;
-fi
-
 note64=117
 note63=184
 note62=234
