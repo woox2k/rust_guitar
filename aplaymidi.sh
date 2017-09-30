@@ -5,7 +5,7 @@
 # To skip a track just kill aplaymidi
 #
 
-if pidof -x "aplaymidi.sh" >/dev/null; then
+if pidof -x "aplaymidi" >/dev/null; then
     echo "Script already running"
 	exit 1;
 fi

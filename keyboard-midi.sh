@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if pidof -x "keyboard-midi.sh" >/dev/null; then
-    echo "Script already running"
-	exit 1;
-fi
-
 note64=117
 note63=184
 note62=234
@@ -37,8 +32,8 @@ while IFS=" ," read src ev1 ev2 ch label1 data1 label2 data2 rest; do
         lastnote=$note52
         sleep 0.03
         xdotool click 3;;
-		"Note on 53" )
-		move=$(expr $note53 - $lastnote)
+	"Note on 53" )
+	move=$(expr $note53 - $lastnote)
         xdotool mousemove_relative --sync 0 $move
         lastnote=$note53
         sleep 0.03
@@ -114,7 +109,7 @@ while IFS=" ," read src ev1 ev2 ch label1 data1 label2 data2 rest; do
 # Lower notes for strum sound
 #
         
-		"Note on 27" ) 
+	"Note on 27" ) 
         move=$(expr $note51 - $lastnote)
         xdotool mousemove_relative --sync 0 $move
         lastnote=$note51
@@ -126,8 +121,8 @@ while IFS=" ," read src ev1 ev2 ch label1 data1 label2 data2 rest; do
         lastnote=$note52
         sleep 0.03
         xdotool click 1;;
-		"Note on 29" )
-		move=$(expr $note53 - $lastnote)
+	"Note on 29" )
+	move=$(expr $note53 - $lastnote)
         xdotool mousemove_relative --sync 0 $move
         lastnote=$note53
         sleep 0.03
