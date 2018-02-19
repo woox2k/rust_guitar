@@ -6,6 +6,7 @@
 **Important info**: Since the guitar is only able to play one octave D#3 to E4 and script listens for these notes from any MIDI track custom built MIDIs are preferred. Don't just download MIDI files from the internet and try to play them.
 
 **Dependencies for using these scripts**:
+- Standalone Linux installation with Steam and Rust (It will **not** work on Linux subsystem for Windows)
 - xdotool
 - alsa-utils
 - the game itself
